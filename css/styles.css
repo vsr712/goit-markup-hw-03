@@ -199,6 +199,11 @@ body {
   padding-bottom: 94px;
 }
 
+.section-images {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
 .text {
   display: flex;
   flex-wrap: wrap;
@@ -218,6 +223,11 @@ body {
   margin: -1px;
 }
 
+.text-item {
+  flex-basis: calc((100% - 90px) / 4);
+  display: block;
+}
+
 .title-text {
   font-weight: 700;
   font-style: normal;
@@ -226,29 +236,16 @@ body {
   text-transform: uppercase;
   color: var(--primary-text-color-dark);
   padding-bottom: 10px;
-  
-
 }
 
 .text-text {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-dark);
-  width: 270px;
-  height: 72px;
-  
 }
-
-.text-item {
-  flex-basis: calc((100% - 90px) / 4);
-  display: block;
-  width: 270px;
-  height: 72px;
-}
-
 
 .photo,
 .images {
