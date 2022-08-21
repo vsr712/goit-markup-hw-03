@@ -393,7 +393,6 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 1.6;
-  /* identical to box height, or 162% */
   text-align: center;
   color: var(--primary-text-color-dark);
 }
@@ -420,29 +419,22 @@ body {
   color: var(--primary-text-color-light);
 }
 
-
-
-
 .tile-portfolio {
   font-weight: 700;
   font-style: normal;
   font-size: 18px;
   line-height: 2.0;
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--primary-text-color-dark);
   padding-bottom: 4px;
-  
-  }
+}
 
 .text-portfolio {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 1.9;
-  /* identical to box height, or 188% */
   color: var(--secondary-text-color-dark);
-  
 }
 
 .images-portfolio {
@@ -454,18 +446,15 @@ body {
 
 .images-portfolio-item {
   flex-basis: calc((100% - 60px) / 9);
+  display: block;
 }
 
 .description {
-  
   border: 1px solid var(--section-color-light3);
   background-color: var(--primary-text-color-light);
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-  
 }
-
-
 
 /*==========/main-portfolio==========*/
