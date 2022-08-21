@@ -24,10 +24,6 @@ ol,ul {
   padding-left: 0;
 }
 
- * {
-  box-sizing: border-box;
- }
-
 .link {
   text-decoration: none;
 }
@@ -76,16 +72,13 @@ body {
 .menu {
   display: flex;
   column-gap: 50px;
+  margin-left: 93px;
 }
 
 .menu-contact {
   display: flex;
   column-gap: 50px;
   margin-left: auto;
-}
-
-.logo {
-  margin-right: 93px;
 }
 
 .logo1 {
@@ -155,6 +148,19 @@ body {
   background: var(--section-color-dark);
 }
 
+.title-light {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.container-title {
+  width: 696px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  
+   
+}
 .title {
   font-weight: 900;
   font-size: 44px;
@@ -163,10 +169,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-text-color-light);
-}
-
-.modal-open-btn {
-  background-color: var(--aczent-font);
+  padding-bottom: 30px;
 }
 
 .modal-open-btn {
@@ -176,8 +179,12 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0.06em;
   color: var(--primary-text-color-light);
+  background-color: var(--aczent-font);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-open-btn:hover,
@@ -189,6 +196,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .text {
   display: flex;
   flex-wrap: wrap;
@@ -221,22 +229,14 @@ body {
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.03em;
-  display: block;
-  width: 270px;
-  height: 72px;
   color: var(--secondary-text-color-dark);
-  
-}
-.text-container {
-  display: flex;
-  flex-wrap: wrap;
-    
 }
 
 .text-item {
   flex-basis: calc((100% - 90px) / 4);
- 
-  
+  display: block;
+  width: 270px;
+  height: 72px;
 }
 
 
@@ -261,18 +261,19 @@ body {
   border-radius: 0px;
 }
 .title-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.0;
   text-align: center;
   color: var(--primary-text-color-dark);
   padding-bottom: 10px;
 }
 
 .position {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+  text-align: start;
   color: var(--secondary-text-color-dark);
   padding-bottom: 30px;
 }
@@ -294,8 +295,12 @@ body {
 /*==========footer==========*/
 .page-footer {
   background: var(--section-color-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
+.logo-portfolio {
+  margin-bottom: 20px;
+}
 .logo3 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -316,12 +321,14 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: var(--primary-text-color-light);
+  margin-bottom: 9px;
 }
 
 .contact-email1 {
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
 
 .contact-phone-number1 {
