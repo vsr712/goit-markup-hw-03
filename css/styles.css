@@ -273,7 +273,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: start;
+  text-align: center;
   color: var(--secondary-text-color-dark);
   padding-bottom: 30px;
 }
@@ -410,6 +410,7 @@ body {
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--primary-text-color-dark);
+  padding-bottom: 4px;
   
   
 }
@@ -419,6 +420,7 @@ body {
   line-height: 1.9;
   /* identical to box height, or 188% */
   color: var(--secondary-text-color-dark);
+  
 }
 
 .images-portfolio {
@@ -431,9 +433,16 @@ body {
 .images-portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
 }
+
+.images-img-portfolio {
+  padding-bottom: 0;
+}
 .description {
+  
   border: 1px solid var(--section-color-light3);
   background-color: var(--primary-text-color-light);
+  padding-top: 20px;
+  padding-bottom: 20px;
   
 }
 
