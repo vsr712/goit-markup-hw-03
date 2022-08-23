@@ -60,17 +60,27 @@ body {
   border: 1px solid var(--line-color-light4);
   padding-top: 32px;
   padding-bottom: 32px;
+  
 }
 
-.page-navigation-container {
+.page-header-container {
   display: flex;
   align-items: center;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
 }
 
 .menu {
   display: flex;
   column-gap: 50px;
-  margin-left: 93px;
+
 }
 
 .menu-contact {
@@ -170,7 +180,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-text-color-light);
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .modal-open-btn {
@@ -183,8 +193,12 @@ body {
   text-align: center;
   justify-content: center;
   letter-spacing: 0.06em;
+  width: 216px;
+  height: 50px;
   color: var(--primary-text-color-light);
   background-color: var(--aczent-font);
+  border-radius: 4px;
+  border: none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -192,6 +206,7 @@ body {
 .modal-open-btn:hover,
 .modal-open-btn:focus {
   background-color: var(--aczent-font-active);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .section {
@@ -232,10 +247,10 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.7;
   text-transform: uppercase;
   color: var(--primary-text-color-dark);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .text-text {
@@ -254,6 +269,9 @@ body {
   gap: 30px;
 }
 
+.caption {
+  padding: 30px;
+}
 .title-images,
 .title-photo {
   font-weight: 700;
@@ -262,11 +280,10 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--primary-text-color-dark);
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .photo-img {
-  padding-bottom: 30px;
-  border-radius: 0px;
+  border-radius: none;
 }
 .title-name {
   font-weight: 700;
@@ -275,7 +292,7 @@ body {
   line-height: 2.0;
   text-align: center;
   color: var(--primary-text-color-dark);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .position {
@@ -285,7 +302,6 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color-dark);
-  padding-bottom: 30px;
 }
 
 .section-photo {
@@ -310,6 +326,7 @@ body {
 }
 
 .logo-footer {
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -336,6 +353,8 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  width: 231px;
+  height: 21px;
   color: var(--primary-text-color-light);
   margin-bottom: 9px;
 }
@@ -345,6 +364,8 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  width: 231px;
+  height: 21px;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
 }
@@ -354,6 +375,8 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  width: 231px;
+  height: 21px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -372,8 +395,8 @@ body {
 /*==========main-portfolio==========*/
 
 .section-portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .text-visually-hidden {
@@ -395,7 +418,14 @@ body {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  border: none;
+  border-radius: 4px;
   color: var(--primary-text-color-dark);
+  background-color: var(--section-color-light2);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .bunton-container {
@@ -406,16 +436,23 @@ body {
   margin-bottom: 50px;
 }
 
-.modal-open-btn-portfolio {
-  background-color: var(--section-color-light2);
+.modal-open-btn-portfolio:hover,
+.modal-open-btn-portfolio:focus {
+  background: var(--aczent-font);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .modal-open-btn-portfolio:hover,
 .modal-open-btn-portfolio:focus {
+  color: var(--primary-text-color-light);
+}
+
+.modal-open-btn-portfolio-1:hover,
+.modal-open-btn-portfolio:focus {
   background: var(--aczent-font);
 }
 
-.modal-open-btn-portfolio:hover,
+.modal-open-btn-portfolio-1:hover,
 .modal-open-btn-portfolio:focus {
   color: var(--primary-text-color-light);
 }
@@ -427,7 +464,7 @@ body {
   line-height: 2.0;
   letter-spacing: 0.06em;
   color: var(--primary-text-color-dark);
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .text-portfolio {
@@ -451,9 +488,12 @@ body {
 }
 
 .description {
-  border: 1px solid var(--section-color-light3);
+  border-left: 1px solid var(--section-color-light3);
+  border-right: 1px solid var(--section-color-light3);
+  border-bottom: 1px solid var(--section-color-light3);;
   background-color: var(--primary-text-color-light);
   padding-left: 24px;
+  padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
