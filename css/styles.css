@@ -283,8 +283,9 @@ body {
   padding-bottom: 50px;
 }
 .photo-img {
-  border-radius: none;
+  border-radius: 4px;
 }
+
 .title-name {
   font-weight: 700;
   font-style: normal;
