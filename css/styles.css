@@ -423,10 +423,7 @@ body {
   border-radius: 4px;
   color: var(--primary-text-color-dark);
   background-color: var(--section-color-light2);
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 22px;
 }
 
 .bunton-container {
@@ -493,10 +490,7 @@ body {
   border-right: 1px solid var(--section-color-light3);
   border-bottom: 1px solid var(--section-color-light3);;
   background-color: var(--primary-text-color-light);
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
 }
 
 /*==========/main-portfolio==========*/
